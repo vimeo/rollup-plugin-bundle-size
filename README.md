@@ -1,4 +1,4 @@
-# rollup-plugin-bundle-size
+# rollup-plugin-bundle-size [![npm](https://img.shields.io/npm/v/rollup-plugin-bundle-size.svg?maxAge=2592000)](https://www.npmjs.com/package/rollup-plugin-bundle-size)
 
 > A rollup plugin to show the size of the generated bundle(s).
 
