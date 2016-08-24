@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-bundle-size",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Output the size of your bundle",
   "main": "index.js",
   "author": "Brad Dougherty <brad@vimeo.com>",
