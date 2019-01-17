@@ -2,12 +2,12 @@ const path = require('path');
 const chalk = require('chalk');
 const maxmin = require('maxmin');
 
-module.exports = function(options) {
+module.exports = function() {
     return {
         name: 'rollup-plugin-bundle-size',
-        ongenerate(details, result) {
-            const asset = path.basename(details.file);
-            const size = maxmin(result.code, result.code, true);
+        generateBundle(options, bundle) {
+            const asset = path.basename(options.file);
+            const size = maxmin(bundle[asset].code, bundle[asset].code, true);
             console.log(`Created bundle ${chalk.cyan(asset)}: ${size.substr(size.indexOf(' → ') + 3)}`);
         }
     };
