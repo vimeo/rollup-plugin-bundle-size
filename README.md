@@ -2,6 +2,15 @@
 
 > A rollup plugin to show the size of the generated bundle(s).
 
+## Sample Output
+
+```bash
+$ rollup -c
+src/project.js → dist/project.bundle.js...
+Created bundle project.bundle.js: 52.53 kB → 18.29 kB (gzip)
+created dist/project.bundle.js in 3.5s
+```
+
 ## Installation
 
 ```bash
